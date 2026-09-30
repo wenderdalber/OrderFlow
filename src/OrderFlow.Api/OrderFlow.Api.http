@@ -24,3 +24,12 @@ POST {{baseUrl}}/api/orders/{{orderId}}/place
 
 ### Get non-existent order (expect 404)
 GET {{baseUrl}}/api/orders/00000000-0000-0000-0000-000000000001
+
+### Pay order
+POST {{baseUrl}}/api/orders/{{orderId}}/pay
+
+### Ship order
+POST {{baseUrl}}/api/orders/{{orderId}}/ship
+
+### Cancel shipped order (expect 422)
+POST {{baseUrl}}/api/orders/{{orderId}}/cancel
