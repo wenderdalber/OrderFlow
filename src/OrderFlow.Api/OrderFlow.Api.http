@@ -1,0 +1,26 @@
+@baseUrl = https://localhost:7001
+@orderId = 00000000-0000-0000-0000-000000000000
+
+### Create order
+POST {{baseUrl}}/api/orders
+Content-Type: application/json
+
+{
+  "customerId": "0199a1b2-0000-7000-8000-000000000001",
+  "items": [
+    { "productId": "0199a1b2-0000-7000-8000-0000000000a1", "productName": "Book", "unitPrice": 49.90, "quantity": 2 },
+    { "productId": "0199a1b2-0000-7000-8000-0000000000a2", "productName": "Bookmark", "unitPrice": 5.00, "quantity": 3 }
+  ]
+}
+
+### Get order
+GET {{baseUrl}}/api/orders/{{orderId}}
+
+### Place order
+POST {{baseUrl}}/api/orders/{{orderId}}/place
+
+### Place order again (expect 422)
+POST {{baseUrl}}/api/orders/{{orderId}}/place
+
+### Get non-existent order (expect 404)
+GET {{baseUrl}}/api/orders/00000000-0000-0000-0000-000000000001
