@@ -138,7 +138,7 @@ dotnet test
 - [x] EF Core persistence with PostgreSQL
 - [x] REST endpoints with global error handling (`ProblemDetails`)
 - [x] API documentation with Scalar
-- [ ] Remaining use cases (pay, ship, cancel, get order)
+- [x] Remaining use cases (pay, ship, cancel, get order)
 - [ ] Integration tests with Testcontainers
 - [ ] CI pipeline with GitHub Actions
 
