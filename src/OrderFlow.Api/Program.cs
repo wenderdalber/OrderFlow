@@ -1,7 +1,6 @@
 using OrderFlow.Api.Infrastructure;
 using OrderFlow.Application;
 using OrderFlow.Infrastructure;
-
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);

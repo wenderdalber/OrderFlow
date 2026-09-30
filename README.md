@@ -136,8 +136,8 @@ dotnet test
 - [x] Domain model with business rules
 - [x] Application use cases (create and place order)
 - [x] EF Core persistence with PostgreSQL
-- [ ] REST endpoints with global error handling (`ProblemDetails`)
-- [ ] API documentation with Scalar
+- [x] REST endpoints with global error handling (`ProblemDetails`)
+- [x] API documentation with Scalar
 - [ ] Remaining use cases (pay, ship, cancel, get order)
 - [ ] Integration tests with Testcontainers
 - [ ] CI pipeline with GitHub Actions
